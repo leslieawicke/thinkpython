@@ -44,11 +44,25 @@ def draw_b(t):
 	t.pu()
 	letterline(t, n = 1, length = 52, angle = 180)
 
+def draw_c(t):
+	'''Draws the letter C.
+	t = the turtle.'''
+	t.lt(90)
+	t.fd(90)
+	t.rt(90)
+	t.fd(90)
+	t.lt(180)
+	t.pd()
+	arc(t, r = 45, angle = 100)
+	arc(t, r = 45, angle = 100)
+	t.pu()
+
 
 #draw the letter A
 bob = turtle.Turtle()
-draw_b(bob)
-bob.fd(25)
+draw_a(bob)
+bob.fd(30)
+draw_c(bob)
 
 # wait for the user to close the window
 turtle.mainloop()
